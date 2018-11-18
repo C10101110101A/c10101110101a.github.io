@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+}
+
+.site{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.links-w{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*cabecalho = logo + icones*/
+.site header{
+    width: 100%;
+    background-color: #000000;
+
+}
+
+.imagem{
+    width: 100%;
+    text-align: center;
+}
+.logo .logo-principal{
+    width: 150px;
+    margin: 10px 0;
+}
+
+.icone .icone-img{
+    margin: 0px 7.5% 10px 7.5%;
+}
+.icone-facebook:hover{
+    transition: 0.5s;
+    background: #4267b2;
+}
+.icone-instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    transition: 0.5s;
+}
+.icone-linkedin:hover{
+    transition: 0.5s;
+    background: #0077B5;
+}
+.icone-github:hover{
+    transition: 0.5s;
+    background: rgb(127, 0, 127);
+}
+/*menu*/
+nav{
+    width: 100%;
+    box-shadow: #000000 0px 0px 10px;
+    position: sticky;
+    top: 0;
+}
+nav .menu{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    list-style: none;
+}
+
+.menu .menu-item{
+    width: 100px;
+    padding: 5px 0;
+    margin: 0px 3%;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu .menu-item:hover{
+    color: #fff;
+    background:  #000;
+    transition: 0.5s;
+}
+/*conteudo*/
+.site .site-section{
+    width: 100%;
+    height: auto;
+    border-top: #000000 1px solid;
+}
+
+.site .section-w{
+    background: #fff;
+}
+.site .section-b{
+    background: #000;
+}
+/*conteudo-home*/
+/*.site .section-home{
+    height: 450px;
+    background: #000;
+}*/
+.perfil{
+    padding: 40px 0;
+}
+
+.perfil-cesar_aliaga{
+    width: 35%;
+    border: #ffffff 2px solid;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.perfil .perfil-info{
+    width: 50%;
+    text-align: center;
+    color:#fff;
+    float: right;
+}
+.limp{
+    clear: both;
+}
+
+.perfil .perfil-info h1{
+    font-size: 30pt;
+}
+.perfil .perfil-info h2{
+    font-size: 17pt;
+    text-decoration: none;
+    padding: 10px 0 0 0;
+}
+
+.perfil .perfil-info li{
+    margin: 10px;
+    list-style: none;
+    font-size: 16pt;
+}
+.cv:hover{
+    text-decoration: underline;
+}
+/*conteudo-portfolio*/
+.section-portfolio{
+    text-align: center;
+}
+/*-----------------------------------*/
+@media screen and (min-width: 550px) and (max-width: 768px){
+    
+    .imagem{
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+    .logo{
+        float: left;
+    }
+    .icone{
+        clear: both;
+    }
+    .logo-principal{
+        width: 150px;
+        margin: 10px 0;
+    }
+    
+    .icone .icone-img{
+        margin: 10px 15%;
+    }
+    .perfil{
+        width: 100%;
+    }
+    .perfil-cesar_aliaga{
+        width: 70%;
+        border: #ffffff 2px solid;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .perfil .perfil-info{
+        width: 100%;
+        text-align: center;
+        color:#fff;
+    }
+}
+@media screen and (min-width: 310px) and (max-width: 550px){
+        
+    .imagem{
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+    .logo{
+        float: left;
+    }
+    .icone{
+        clear: both;
+    }
+    .logo-principal{
+        width: 150px;
+        margin: 10px 0;
+    }
+    .icone .icone-img{
+        margin: 10px 11%;
+    }
+    .perfil{
+        width: 100%;
+    }
+    .perfil-cesar_aliaga{
+        width: 70%;
+        border: #ffffff 2px solid;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .perfil .perfil-info{
+        width: 100%;
+        text-align: center;
+        color:#fff;
+    }
+}
